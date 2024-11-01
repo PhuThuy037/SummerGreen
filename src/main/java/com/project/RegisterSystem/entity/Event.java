@@ -33,4 +33,8 @@ public class Event {
     @OneToMany(mappedBy = "event")
     private List<CommunityLeader> communityLeader;
 
+    @OneToOne
+    @JoinColumn(name = "accept_id")
+    private Appcept appcept;
+
 }

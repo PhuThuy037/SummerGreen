@@ -4,15 +4,14 @@ spring:
     username: user
     password: pass
     driver-class-name: org.postgresql.Driver
-    jpa:
-      hibernate:
-        ddl-auto: update
+  jpa:
+    hibernate:
+      ddl-auto: create
       database: postgresql
       database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-logging:
-  level:
-    org.springframework.security: trace
+
+
 
 #Test
 secert.jwt.string : E978AF5875411FD33FE319AF8EB22

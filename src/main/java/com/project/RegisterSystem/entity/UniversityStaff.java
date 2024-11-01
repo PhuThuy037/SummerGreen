@@ -11,8 +11,6 @@ public class UniversityStaff {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
-
     @ManyToOne
     @JoinColumn(name = "university_id")
     private University university;
